@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 !important;
+}
+
+@font-face {
+    font-family: yekan_bakh_regular;
+    src: url('assets/YekanBakh-Regular.woff');
+}
+
+@font-face {
+    font-family: yekan_bakh_fat;
+    src: url('assets/YekanBakh-fat.woff');
+}
+
+@font-face {
+    font-family: yekan_bakh_heavy;
+    src: url('assets/YekanBakh-heavy.woff');
+}
+@font-face {
+    font-family: samsung_sans;
+    src: url('assets/SamsungSans-Bold.ttf');
+}
