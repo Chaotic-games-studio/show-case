@@ -2,13 +2,22 @@
   .main {
     font-family: irsns;
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     direction: rtl;
     background: #e7f0bf;
     position: relative;
     height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #61be72;
   }
@@ -31,8 +40,12 @@
     background: #007d3d;
     color: #e7f0bf;
     height: 53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: irsns;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -67,6 +80,8 @@
   }
 
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     direction: ltr;
   }
@@ -86,8 +101,14 @@
     right: 0;
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -102,6 +123,8 @@
 
   .d-op {
     opacity: 0;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
@@ -110,6 +133,8 @@
   }
 
   .empty {
+    -webkit-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     position: absolute;
     bottom: 0;
@@ -125,7 +150,7 @@
   img {
     margin-bottom: 20px;
     width: 70px;
-}
+  }
 </style>
 <div class="main">
   <img src="assets/ChaoticGames.png" alt="" srcset="">
