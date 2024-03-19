@@ -1,5 +1,18 @@
-<style>
-  .main {
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 !important;
+}
+@font-face {
+    font-family: irsns;
+    src: url('assets/Yekan.woff') format('woff');
+}
+@font-face {
+    font-family: samsung_sans;
+    src: url('assets/SamsungSansBold.ttf');
+}
+html,body { -webkit-text-size-adjust:none; }
+
+.main {
     font-family: irsns;
     width: 100vw;
     display: -webkit-box;
@@ -160,22 +173,3 @@
       font-size: 16px;
     }
   }
-</style>
-<div class="main">
-  <img src="assets/ChaoticGames.png" alt="" srcset="">
-  <h1>در حال ساختنیم!</h1>
-  <h2>هنوز زوده</h2>
-  <p class="desc">ایمیلت رو وارد کن تا خبرت کنم</p>
-  <div class="container">
-    <input #email class="email" type="text" name="" id="" placeholder="chaotic@games.studio">
-    <button #sub (click)="oops()">ثبت</button>
-  </div>
-  <p class="footer">Chaotic Games Studio</p>
-  <div class="oops d-none">
-    <h1 class="oops-text">
-      اوپس! این بخش هم در حال ساختنه!
-    </h1>
-    <button (click)="return()">بازگشت</button>
-  </div>
-  <div #empty class="empty d-op">ایمیلت رو وارد کن</div>
-</div>
