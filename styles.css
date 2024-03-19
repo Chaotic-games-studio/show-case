@@ -1,0 +1,175 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0 !important;
+}
+@font-face {
+    font-family: irsns;
+    src: url('assets/Yekan.woff') format('woff');
+}
+@font-face {
+    font-family: samsung_sans;
+    src: url('assets/SamsungSansBold.ttf');
+}
+html,body { -webkit-text-size-adjust:none; }
+
+.main {
+    font-family: irsns;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    direction: rtl;
+    background: #e7f0bf;
+    position: relative;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #61be72;
+  }
+
+  input[type="text"] {
+    border: 2px solid #61be72;
+    border-style: outset !important;
+    padding: 15px 10px;
+    width: 240px;
+    font-size: 16px;
+    border-radius: 10px 0 0 10px;
+    font-family: samsung_sans;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #007d3d;
+    background: #007d3d;
+    color: #e7f0bf;
+    height: 53px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: irsns;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  button[disabled] {
+    color: #f6f6f6;
+    background-color: #545454;
+    cursor: not-allowed;
+  }
+
+  .desc {
+    margin-bottom: 5px;
+  }
+
+  input[type="text"]:focus-visible {
+    outline: 2px solid #61be72;
+  }
+
+  h1,
+  .oops-text {
+    font-family: irsns;
+    color: #007d3d;
+    margin: 10px;
+  }
+
+  h2 {
+    margin: 10px;
+    font-family: irsns;
+  }
+
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    direction: ltr;
+  }
+
+  .footer {
+    font-family: samsung_sans;
+    letter-spacing: 15px;
+    width: 100vw;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .oops {
+    position: absolute;
+    background-color: #e7f0bf;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .oops-text {
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .oops>button {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .d-op {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  .empty {
+    -webkit-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    bottom: 0;
+    padding: 10px 30px;
+    color: red;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: irsns;
+    background: #3f00002b;
+  }
+
+  img {
+    margin-bottom: 20px;
+    width: 70px;
+  }
+
+  @media only screen and (width< 600px) {
+    .empty {
+      bottom: 100px;
+    }
+    .oops-text {
+      font-size: 16px;
+    }
+  }
